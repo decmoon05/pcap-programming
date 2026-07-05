@@ -33,21 +33,19 @@ make
 저장된 pcap 파일을 읽는 경우:
 
 ```
-./pcap_parser -r sample_http.pcap
+./pcap_parser sample_http.pcap
 ```
 
-라이브로 잡는 경우 (무차별 모드라서 관리자 권한이 필요하고, eth0 은 본인 인터페이스로 바꾼다):
+라이브로 잡는 경우 (무차별 모드라서 관리자 권한이 필요하고, 소스의 eth0 은 본인 인터페이스로 바꾼다):
 
 ```
-sudo ./pcap_parser -i eth0
+sudo ./pcap_parser
 ```
-
-인터페이스를 지정하지 않으면 시스템의 첫 번째 장치를 자동으로 고른다.
 
 ## 실행 예시
 
 ```
-$ ./pcap_parser -r sample_http.pcap
+$ ./pcap_parser sample_http.pcap
 
 [Packet #4]
 [Ethernet] Dst MAC : b0:38:6c:49:17:a7
