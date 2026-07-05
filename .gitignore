@@ -1,0 +1,7 @@
+# 빌드 결과물
+pcap_parser
+*.o
+
+# 캡처 파일은 용량이 커질 수 있어 예시 하나만 올린다
+*.pcap
+!sample_http.pcap
